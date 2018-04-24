@@ -8,4 +8,34 @@ Ge Chen
 
 Maintained by Songfang Han (<shanaf@connect.ust.hk>)
 
+Tested on Qt 4.8, Windows 7.
+
+## Setup
+
+### Dependencies
+
+To install the dependencies, run:
+
+    cd indepthbuffers
+
+### DAGClustering
+
+To generate indepth buffers:
+
+    dag-merger.exe -m modelpath -s viewsub -l sampleTriSub -c cacheDir
+ 
+An example usage is in the.
+
+### DAG Order Upsample
+
+To generate order from coarse model
+
+    dag-merger.exe -m modelpath -s viewsub -l sampleTriSub -c cacheDir
+
+### Viewer
+An example render with preprocessed in-depth buffers is given in dag-viewer.
+To use it:
+ 
+    dag-merger.exe -m modelpath -s viewsub -l sampleTriSub -c cacheDir 
+  
 Final code will be released by publication time.

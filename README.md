@@ -8,7 +8,7 @@ Ge Chen
 
 Maintained by Songfang Han (<shanaf@connect.ust.hk>)
 
-Tested on Qt 4.8, visual studio 2015, Windows 7.
+Tested on Qt 5.7(MSVC2015_64bit), Windows 7.
 
 ## Setup
 
@@ -27,7 +27,7 @@ To generate indepth buffers:
 
     dag-merger.exe -m modelpath -s viewSub -l sampleTriSub -e epsilonParam -c cacheDir -p priorityMetric -i relaxIteration
  
-An example is given in the root/bin/example.bin.
+An example is given in the root/bin/example.bat.
 
 ### DAG Order Upsample
 
@@ -35,7 +35,7 @@ To generate order from coarse model
 
     dag-upsample.exe -m modelpath -n coarseModelpath -s viewSub -l sampleTriSub -e epsilonParam-c cacheDir -b carsemodelCacheDir
 
-An example is given in the root/bin/example.bin.
+An example is given in the root/bin/example.bat.
 
 ### Viewer
 An example render using preprocessed in-depth buffers is given in dag-viewer.
@@ -43,4 +43,4 @@ To use it:
  
     dag-viewer.exe -m modelpath -c cacheDir
   
-An example is given in the root/bin/example.bin.
+An example is given in the root/bin/example.bat.

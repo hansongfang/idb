@@ -1,3 +1,5 @@
 thirdparty/
 build/
 lib/
+bin/debug/
+PLY/

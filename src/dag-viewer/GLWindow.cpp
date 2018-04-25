@@ -243,8 +243,8 @@ void GLWindow::render(int start, int nIndices, int viewId)
     glBindTexture(GL_TEXTURE_2D, 0);
     glfwSwapBuffers(_window);
 
-    string suffix = "./visual";
-    saveFrontBuffer(suffix, viewId);
+//    string suffix = "./visual";
+//    saveFrontBuffer(suffix, viewId);
 
 }
 

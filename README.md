@@ -8,34 +8,37 @@ Ge Chen
 
 Maintained by Songfang Han (<shanaf@connect.ust.hk>)
 
-Tested on Qt 4.8, Windows 7.
+Tested on Qt 4.8, visual studio 2015, Windows 7.
 
 ## Setup
 
 ### Dependencies
 
-To install the dependencies, run:
+This project is build with Boost 1.61. For the rendering example, glew, glfw, flm and freeImage is used.
 
-    cd indepthbuffers
+    Download thirdparty.zip
+    unzip thirdparty to root
 
 ### DAGClustering
 
 To generate indepth buffers:
 
-    dag-merger.exe -m modelpath -s viewsub -l sampleTriSub -c cacheDir
+    dag-merger.exe -m modelpath -s viewSub -l sampleTriSub -e epsilonParam -c cacheDir -p priorityMetric -i relaxIteration
  
-An example usage is in the.
+An example is given in the root/bin/example.bin.
 
 ### DAG Order Upsample
 
 To generate order from coarse model
 
-    dag-merger.exe -m modelpath -s viewsub -l sampleTriSub -c cacheDir
+    dag-upsample.exe -m modelpath -n coarseModelpath -s viewSub -l sampleTriSub -e epsilonParam-c cacheDir -b carsemodelCacheDir
+
+An example is given in the root/bin/example.bin.
 
 ### Viewer
-An example render with preprocessed in-depth buffers is given in dag-viewer.
+An example render using preprocessed in-depth buffers is given in dag-viewer.
 To use it:
  
-    dag-merger.exe -m modelpath -s viewsub -l sampleTriSub -c cacheDir 
+    dag-viewer.exe -m modelpath -c cacheDir
   
-Final code will be released by publication time.
+An example is given in the root/bin/example.bin.

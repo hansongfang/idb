@@ -16,6 +16,8 @@ Tested on Qt 4.8, visual studio 2015, Windows 7.
 
 This project is build with Boost 1.61. For the rendering example, glew, glfw, flm and freeImage is used.
 
+<a href="https://drive.google.com/open?id=1shYARxhdkm982VBS72nUtLv9p2JGqtu-" download>   thirdparty.zip</a>
+
     Download thirdparty.zip
     unzip thirdparty to root
 
